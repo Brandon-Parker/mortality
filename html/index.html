@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>INEVITABLE MORTALITY</title>
-      <link rel="stylesheet" href="css/normalize.css"/>
-      <link rel="stylesheet" href="css/skeleton.css"/>
-      <link rel="stylesheet" href="css/mortality.css"/>
+<!--       <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+ -->      <link rel="stylesheet" href="../css/normalize.css"/>
+      <link rel="stylesheet" href="../css/skeleton.css"/>
+      <link rel="stylesheet" href="../css/mortality.css"/>
   </head>
 
 <header>
@@ -12,8 +13,8 @@
   <nav>
     <p>
       <ul>
-        <li><a href='index.html'>Home</li>
-        <li><a href='about.html'>About Us</li>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About Us</a></li>
       </ul>
     </p>
   </nav>
@@ -21,22 +22,25 @@
 
 <body>
   <section id="inputForm">
-    <label>Name: <input type="text"></label>
-    <br/ >
-    Mood:
-    <br/ >
-    <input id="apathetic" type="radio" name="mood" value="apa">
-    <label for="apathetic">Apathetic</label>
-    <br/ >
-    <input id="insane" type="radio" name="mood" value="ins">
-    <label for="insane">Insane</label>
-    <br/ >
-    <input id="rambunctious" type="radio" name="mood" value="ram">
-    <label for="rambunctious">Rambunctious</label>
-    <br/ >
-    <input id="drunk" type="radio" name="mood" value="dru">
-    <label for="drunk">Drunk</label>
-
+    <form>
+      <label>Name: <input id="nameInput" type="text" name="name" maxlength="30"></label>
+      <br/ >
+      Mood:
+      <br/ >
+      <input id="apathetic" type="radio" name="mood" value="apa">
+      <label for="apathetic">Apathetic</label>
+      <br/ >
+      <input id="insane" type="radio" name="mood" value="ins">
+      <label for="insane">Insane</label>
+      <br/ >
+      <input id="rambunctious" type="radio" name="mood" value="ram">
+      <label for="rambunctious">Rambunctious</label>
+      <br/ >
+      <input id="drunk" type="radio" name="mood" value="dru">
+      <label for="drunk">Drunk</label>
+      <br />
+      <button id="submitButton" onclick="store();">Get My Result</button>
+    </form>
   </section>
 
 
@@ -46,5 +50,5 @@
 <footer>
   TBD
 </footer>
-<script src='js/index.js'/>
+<script src='../js/index.js'/>
 </html>

@@ -18,7 +18,7 @@
 
 <body>
   <section id="inputForm">
-    <label>Name: <input type="text"></label>
+    <label>Name: <input id= "userName" type="text" name="name" maxlength="30"></label>
     <br/ >
     Mood:
     <br/ >
@@ -33,6 +33,8 @@
     <br/ >
     <input id="drunk" type="radio" name="mood" value="dru">
     <label for="drunk">Drunk</label>
+
+    <button id="submit" onclick="store();">Get My Result</button>
 
   </section>
 

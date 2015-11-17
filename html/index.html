@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>INEVITABLE MORTALITY</title>
-<!--       <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+<!--       <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet" type="text/css">
  -->      <link rel="stylesheet" href="../css/normalize.css"/>
       <link rel="stylesheet" href="../css/skeleton.css"/>
       <link rel="stylesheet" href="../css/mortality.css"/>
+      <a href="results.html"></a>
   </head>
 
 <header>
@@ -13,8 +14,8 @@
   <nav>
     <p>
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='about.html'>About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </p>
   </nav>
@@ -23,7 +24,7 @@
 <body>
   <section>
     <form id="inputForm">
-      <label>Name: <input id="nameInput" type="text" name="name" maxlength="30"></label>
+      <label>Name: <input id="input" type="text" name="name" maxlength="30"></label>
       <br/ >
       Mood:
       <br/ >
@@ -41,26 +42,27 @@
       <!-- <br /> -->
     </form>
 
-    <form id='spanWords'>
+    <form id="spanWords">
       <label>
-        Noun 1: <input id='noun' type="text" name='nounOne' maxlength="30">
+        Nouns: <input id="noun" type="text" name="nounOne" maxlength="30">
       </label>
       <label>
-        Adjective 1: <input id='adj' type="text" name='adjOne' maxlength="30">
+        Adjectives: <input id="adj" type="text" name="adjOne" maxlength="30">
       </label>
       <label>
-        Verb 1: <input id='verb' type='text' name='verbOne' maxlength="30">
+        Verbs: <input id="verb" type="text" name="verbOne" maxlength="30">
       </label>
+      <button id="button" formaction="results.html">Get My Result</button>
     </form>
   </section>
 
 
 </body>
-      <button id="submitButton" onclick="store();">Get My Result</button>
+      <!-- <input id="input" type="type" name="name" maxlength="30"> -->
 
 
 <footer>
   TBD
 </footer>
-<script src='../js/index.js'/>
+<script src="../js/index.js"/></script>
 </html>

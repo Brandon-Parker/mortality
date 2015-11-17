@@ -1,30 +1,17 @@
-// function store() {
-//   var submitEl = document.getElementById('nameInput');
-//   localStorage.setItem("name", submitEl.value);
-// }
-
-
-// submitEl.addEventListener('click', submitEl);
-
-var nouns = [];
-var adjectives = [];
-var verbs = [];
-
-
 (function ($) {
   "use strict";
 
   $.fn.halloweenBats = function (options) {
     var Bat,
       bats = [],
-      $body= $('body'),
-      innerWidth = $body.innerWidth(),
-      innerHeight = $body.innerHeight(),
+      $header= $('header'),
+      innerWidth = $header.innerWidth(),
+      innerHeight = $header.innerHeight(),
       counter,
       defaults = {
         image: 'https://raw.githubusercontent.com/Artimon/jquery-halloween-bats/master/bats.png', // Path to the image.
         zIndex: 10000, // The z-index you need.
-        amount: 9, // Bat amount.
+        amount: 20, // Bat amount.
         width: 35, // Image width.
         height: 20, // Animation frame height.
         frames: 4, // Amount of animation frames.
@@ -134,7 +121,7 @@ var verbs = [];
       frame = Math.random() * options.frames;
       frame = Math.round(frame);
 
-      $body.append($bat);
+      $header.append($bat);
       $bat.css({
         position: 'absolute',
         left: x + 'px',
@@ -155,8 +142,8 @@ var verbs = [];
     }
 
     $(window).resize(function() {
-      innerWidth = $body.innerWidth();
-      innerHeight = $body.innerHeight();
+      innerWidth = $header.innerWidth();
+      innerHeight = $header.innerHeight();
     });
   };
 }(jQuery));

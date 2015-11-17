@@ -3,6 +3,7 @@ Rambunctious?---
 Apathetic?---
 Insane?---
 Bored?---
+Optimistic?---
 Scott?---
 
 
@@ -26,3 +27,6 @@ it was a dfark awnd stormy night. you aer going to igo [verb1] a [noun1] for a w
 
 Bored:
 It was a dark and stormy night. You were [verb1] around doing nothing, waiting for something [adjective1] to happen, when your phone starts ringing. You pick it up, figuring it must be a [noun1]since no one ever calls you. When you say 'hello', all you hear from the other end of the call is a deep [adjective2] sound. It must be a kid prank calling... So you hang up and go back to doing a whole lot of nothing. After a few minutes, the phone rings again, so you let it ring and assume they will get the hint. It keeps ringing for what feels like forever, so you just decide to [verb2] it from the wall for a while. You sit back down for a few minutes... and then it starts ringing again! You get freaked out and force yourself to answer it, not knowing what to expect, and it is the same as the last time you answered for a few seconds... and then you hear a [noun2] voice say to you: "You're going to die soon. You should probably [verb3] your farewells soon." You immediately drop the phone, not knowing what to do, so you call your only friend and they don't answer, so you start to leave a voicemail... when your [noun3] bursts into flame mid-sentence, killing you [adjective3].
+
+Optimistic:
+It was a dark and stormy night. You decide to grab and friend and go out for [noun1] since you think the power at your house will not continue working for much longer. You [verb1] outside into the [adjective1] rain and head toward your car, but you don't make it very far before [verb2] on the wet [noun2]. Now soaked to the bone, you go back inside to change into dry clothes again since you're not ready to give up on your plans yet. The second attempt was [adjective2] successful so you start your car and head out to meet up with your friend. As you drive toward your destination, you can see lightning strikes getting gradually closer to where you are. Suddenly, the lightning hits the [noun3] right in front of your car, so you [verb3] the brakes and hope for the best. You didn't think about the car behind yours, which then crashes into the back of your car, knocking your head into the steering wheel, rendering you dazed and [adjective3]. Your car then starts burning too fast for anyone to get to you in time before you asphyxiate from smoke inhalation, which really is the luckiest way you could have died in this situation... No one wants to be burned alive.

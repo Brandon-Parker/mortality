@@ -1,52 +1,17 @@
-function storeData() {
-  var inputEl = document.getElementById("input").value;
-  localStorage.setItem("name", JSON.stringify(inputEl));
-  console.log(inputEl);
-}
-
-function getDataOut() {
-  var fill = document.getElementById("getUserInput");
-  var getData = localStorage.getItem("name");
-  var parsedData = JSON.parse(getData);
-  console.log(parsedData);
-  fill.textContent = parsedData;
-}
-
-var buttonAction = document.getElementById("button");
-buttonAction.addEventListener("click", storeData);
-
-<<<<<<< HEAD
-// var noun1 = [];
-// var noun2 = [];
-// var noun3 = [];
-// var adjective1 = [];
-// var adjective2 = [];
-// var adjective3 = [];
-// var verb1 = [];
-// var verb2 = [];
-// var verb3 = [];
-
-getDataOut();
-=======
-var nouns = [];
-var adjectives = [];
-var verbs = [];
-
-
 (function ($) {
   "use strict";
 
   $.fn.halloweenBats = function (options) {
     var Bat,
       bats = [],
-      $body= $('body'),
-      innerWidth = $body.innerWidth(),
-      innerHeight = $body.innerHeight(),
+      $header= $('header'),
+      innerWidth = $header.innerWidth(),
+      innerHeight = $header.innerHeight(),
       counter,
       defaults = {
         image: 'https://raw.githubusercontent.com/Artimon/jquery-halloween-bats/master/bats.png', // Path to the image.
         zIndex: 10000, // The z-index you need.
-        amount: 9, // Bat amount.
+        amount: 20, // Bat amount.
         width: 35, // Image width.
         height: 20, // Animation frame height.
         frames: 4, // Amount of animation frames.
@@ -156,7 +121,7 @@ var verbs = [];
       frame = Math.random() * options.frames;
       frame = Math.round(frame);
 
-      $body.append($bat);
+      $header.append($bat);
       $bat.css({
         position: 'absolute',
         left: x + 'px',
@@ -177,10 +142,9 @@ var verbs = [];
     }
 
     $(window).resize(function() {
-      innerWidth = $body.innerWidth();
-      innerHeight = $body.innerHeight();
+      innerWidth = $header.innerWidth();
+      innerHeight = $header.innerHeight();
     });
   };
 }(jQuery));
 $.fn.halloweenBats({});
->>>>>>> 5455853cd922a60825f198d896eca24db8509f86

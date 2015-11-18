@@ -22,84 +22,59 @@ bored: "It was a dark and stormy night. You were [verb1] around doing nothing, w
 optimistic: "It was a dark and stormy night. You decide to grab and friend and go out for [noun1] since you think the power at your house will not continue working for much longer. You [verb1] outside into the [adj1] rain and head toward your car, but you dont make it very far before [verb2] on the wet [noun2]. Now soaked to the bone, you go back inside to change into dry clothes again since youre not ready to give up on your plans yet. The second attempt was [adj2] successful so you start your car and head out to meet up with your friend. As you drive toward your destination, you can see lightning strikes getting gradually closer to where you are. Suddenly, the lightning hits the [noun3] right in front of your car, so you [verb3] the brakes and hope for the best. You didnt think about the car behind yours, which then crashes into the back of your car, knocking your head into the steering wheel, rendering you dazed and [adj3]. Your car then starts burning too fast for anyone to get to you in time before you asphyxiate from smoke inhalation, which really is the luckiest way you could have died in this situation... No one wants to be burned alive."
 };
 
-
-// function storeData(event) {
-//   event.preventDefault();
-//   var inputEl = document.getElementById("input").value;
-//   localStorage.setItem("name", JSON.stringify(inputEl));
-//   console.log(inputEl);
-
-
-//   var theStory = document.getElementById("resultForm");
-//   //theStory.innerHTML = plugInMadLibs(getSelectedMood(), getUserChoices());
-// // }
-
-// function getDataOut() {
-//   var fill = document.getElementById("getUserInput");
-//   var getData = localStorage.getItem("name");
-//   var parsedData = JSON.parse(getData);
-//   console.log(parsedData);
-//   //fill.textContent = parsedData;
-// }
-
-// function getSelectedMood() {
-//   var radios = document.getElementsByName("mood");
-//    for (var i = 0; i < radios.length; i++) {
-//       if (radios[i].checked) {
-//           return stories[radios[i].id];
-//       }
-//   }
-// }
-
-var listOfChoices = {
-    nounList: [],
-    adjectiveList: [],
-    verbList: []
+function getSelectedMood() {
+  var radios = document.getElementsByName("mood");
+   for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+          return stories[radios[i].id];
+      }
   }
+}
 
 function getUserChoices() {
+  var choices = {
+    nouns: [],
+    adjectives: [],
+    verbs: []
+  };
+
   var userNouns = document.getElementsByClassName("noun");
   for (var i = 0; i < userNouns.length; i++) {
-    listOfChoices.nounList.push( userNouns[i].value );
+    choices.nouns.push(userNouns[i].value);
   }
 
   var userAdjectives = document.getElementsByClassName("adj");
   for (var i = 0; i < userAdjectives.length; i++) {
-    listOfChoices.adjectiveList.push( userAdjectives[i].value );
+    choices.adjectives.push(userAdjectives[i].value);
   }
 
   var userVerbs = document.getElementsByClassName("verb");
   for (var i = 0; i < userVerbs.length; i++) {
-    listOfChoices.verbList.push( userVerbs[i].value );
+    choices.verbs.push(userVerbs[i].value);
   }
-  // localStorage.setItem("nounStored", JSON.stringify(this.listOfChoices.nounList));
-  // console.log(userNouns);
-  // // localStorage.setItem("adjStored", JSON.stringify(listOfChoices.adjectiveList));
-  // console.log(userAdjectives);
-  // localStorage.setItem("verbStored", JSON.stringify(listOfChoices.verbList));
-  // console.log(userVerbs);
+
+  return choices;
 }
 
-getUserChoices();
+function plugInMadLibs (mood, listOfChoices) {
+  mood = mood.replace("[verb1]", listOfChoices.verbs[0]);
+  mood = mood.replace("[verb2]", listOfChoices.verbs[1]);
+  mood = mood.replace("[verb3]", listOfChoices.verbs[2]);
+  mood = mood.replace("[noun1]", listOfChoices.nouns[0]);
+  mood = mood.replace("[noun2]", listOfChoices.nouns[1]);
+  mood = mood.replace("[noun3]", listOfChoices.nouns[2]);
+  mood = mood.replace("[adj1]", listOfChoices.adjectives[0]);
+  mood = mood.replace("[adj2]", listOfChoices.adjectives[1]);
+  mood = mood.replace("[adj3]", listOfChoices.adjectives[2]);
+  return mood;
+}
 
-localStorage.setItem("hiphopopotamus", JSON.stringify(listOfChoices));
-  // console.log(userNouns);
-
-
-// function plugInMadLibs (story, listOfChoices) {
-//   story.replace("[verb1]",listOfChoices.verbList[0]);
-//   story.replace("[verb2]",listOfChoices.verbList[1]);
-//   story.replace("[verb3]",listOfChoices.verbList[2]);
-//   story.replace("[noun1]",listOfChoices.nounList[0]);
-//   story.replace("[noun2]",listOfChoices.nounList[1]);
-//   story.replace("[noun3]",listOfChoices.nounList[2]);
-//   story.replace("[adj1]",listOfChoices.adjectiveList[0]);
-//   story.replace("[adj2]",listOfChoices.adjectiveList[1]);
-//   story.replace("[adj3]",listOfChoices.adjectiveList[2]);
-//   return story;
-// }
-
-// var buttonAction = document.getElementById("button");
-// buttonAction.addEventListener("click", storeData);
-
-// getDataOut();
+document.getElementById("resultsForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  localStorage.setItem("hiphopopotamus", document.getElementById("username").value);
+  var mood = getSelectedMood();
+  var choices = getUserChoices();
+  var completedMadLib = plugInMadLibs(mood, choices);
+  localStorage.setItem("rhymenoceros", completedMadLib);
+  window.location = "../html/results.html";
+});

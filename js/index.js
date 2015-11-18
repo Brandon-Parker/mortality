@@ -44,7 +44,7 @@ function getDataOut() {
 
 function getSelectedMood() {
   //http://stackoverflow.com/questions/9618504/get-radio-button-value-with-javascript
-  var radios = document.getElementsByName('mood');
+  var radios = document.getElementsByName("mood");
 
   for (var i = 0; i < radios.length; i++) {
       if (radios[i].checked) {
@@ -62,23 +62,32 @@ function getUserChoices() {
     verbList: []
   }
 
-  var nouns = document.getElementsByClassName("noun");
-  for (var i = 0; i < nouns.length; i++) {
-    listOfChoices.nounList.push( nouns[i].value );
+  var userNouns = document.getElementsByClassName("noun");
+  for (var i = 0; i < userNouns.length; i++) {
+    listOfChoices.nounList.push( userNouns[i].value );
   }
 
-  var adjectives = document.getElementsByClassName("adj");
-  for (var i = 0; i < adjectives.length; i++) {
-    listOfChoices.adjectiveList.push( adjectives[i].value );
+  var userAdjectives = document.getElementsByClassName("adj");
+  for (var i = 0; i < userAdjectives.length; i++) {
+    listOfChoices.adjectiveList.push( userAdjectives[i].value );
   }
 
-  var verbs = document.getElementsByClassName("verb");
-  for (var i = 0; i < verbs.length; i++) {
-    listOfChoices.verbList.push( verbs[i].value );
+  var userVerbs = document.getElementsByClassName("verb");
+  for (var i = 0; i < userVerbs.length; i++) {
+    listOfChoices.verbList.push( userVerbs[i].value );
   }
 
   return listOfChoices;
+  localStorage.setItem("noun", JSON.stringify(listOfChoices.nounList));
+  console.log(userNouns);
+  localStorage.setItem("adj", JSON.stringify(listOfChoices.adjectiveList));
+  console.log(userAdjectives);
+  localStorage.setItem("verb", JSON.stringify(listOfChoices.verbList));
+  console.log(userVerbs);
 }
+
+
+
 
 function plugInMadLibs (story, listOfChoices) {
   story.replace("[verb1]",listOfChoices.verbList[0]);

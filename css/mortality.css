@@ -1,12 +1,8 @@
 section {
-  background-color: #000 ;
+  background-color: #000201 ;
   font-size: 18px ;
   font-style: ;
   font-family: Metal Mania ;
-}
-
-# {
-  font-color: white;
 }
 
 #navBar {
@@ -22,6 +18,7 @@ section {
     height: auto;
     padding: 8px 0px;
     margin: 0px;
+    text-align: center;
 }
 
 #navBar li {
@@ -35,7 +32,7 @@ padding: 20px;
     padding: 8px 8px 8px 8px;
 }
 
-#menu a:hover {
+#navBar a:hover {
     color: #F90;
     background-color: #FFF;
 }

@@ -1,16 +1,43 @@
-/*header animation (all pages?) http://codepen.io/william-index/pen/pvBXVm*/
-
-/*header {
-  font-family: 'Metal Mania',
-}
-*/
-
-body {
-  background-color: ;
-  color: ;
-  font-size: ;
+section {
+  background-color: #000 ;
+  font-size: 18px ;
   font-style: ;
-  font-family: ;
+  font-family: Metal Mania ;
+}
+
+# {
+  font-color: white;
+}
+
+#navBar {
+  width: 550px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 2px 3px #333333;
+}
+
+#navBar ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+#navBar li {
+display: inline;
+padding: 20px;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
 }
 
 /*all images/animations/box sizes*/

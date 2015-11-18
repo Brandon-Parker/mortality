@@ -12,7 +12,7 @@
 
 <header id='batHeader'>
   <h1>Pick Your Favorite Words</h1>
-  <nav>
+  <nav id='navBar'>
     <p>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -41,34 +41,48 @@
       <input id="drunk" type="radio" name="mood" value="dru">
       <label for="drunk">Drunk</label>
       <!-- <br /> -->
+      <input id="optimistic" type="radio" name="mood" value="opt">
+      <label for="optimistic">Optimistic</label>
+      <!-- <br /> -->
+      <input id="bearded" type="radio" name="mood" value="scott">
+      <label for="bearded">Bearded</label>
     </form>
 
     <form id="spanWords">
       <label>
-        Nouns: <input id="noun" type="text" name="nounOne" maxlength="30">
+        Noun: <input class="noun" type="text" name="nounOne" maxlength="30">
       </label>
       <label>
-        Adjectives: <input id="adj" type="text" name="adjOne" maxlength="30">
+        Noun: <input class="noun" type="text" name="nounTwo" maxlength="30">
       </label>
       <label>
-        Verbs: <input id="verb" type="text" name="verbOne" maxlength="30">
+        Noun: <input class="noun" type="text" name="nounThree" maxlength="30">
+      </label>
+      <label>
+        Adjective: <input class="adj" type="text" name="adjOne" maxlength="30">
+      </label>
+      <label>
+        Adjective: <input class="adj" type="text" name="adjTwo" maxlength="30">
+      </label>
+      <label>
+        Adjective: <input class="adj" type="text" name="adjThree" maxlength="30">
+      </label>
+      <label>
+        Verb: <input class="verb" type="text" name="verbOne" maxlength="30">
+      </label>
+      <label>
+        Verb: <input class="verb" type="text" name="verbTwo" maxlength="30">
+      </label>
+      <label>
+        Verb: <input class="verb" type="text" name="verbThree" maxlength="30">
       </label>
       <button id="button" formaction="results.html">Get My Result</button>
     </form>
   </section>
 
-</body>
-
-<footer>
-  TBD
-</footer>
-<script src="../js/index.js"/></script>
-<button id="submitButton" onclick="store();">Get My Result</button>
-<footer>
-  TBD
-</footer>
+  <script src="../js/index.js"/></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src='../js/batJS.js'></script>
-<script src='../js/index.js'/>
+  <footer></footer>
 </body>
 </html>

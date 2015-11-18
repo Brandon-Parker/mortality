@@ -23,45 +23,41 @@ optimistic: "It was a dark and stormy night. You decide to grab and friend and g
 };
 
 
-function storeData(event) {
-  event.preventDefault();
-  var inputEl = document.getElementById("input").value;
-  localStorage.setItem("name", JSON.stringify(inputEl));
-  console.log(inputEl);
+// function storeData(event) {
+//   event.preventDefault();
+//   var inputEl = document.getElementById("input").value;
+//   localStorage.setItem("name", JSON.stringify(inputEl));
+//   console.log(inputEl);
 
 
-  var theStory = document.getElementById("resultForm");
-  theStory.innerHTML = plugInMadLibs(getSelectedMood(), getUserChoices());
-}
+//   var theStory = document.getElementById("resultForm");
+//   //theStory.innerHTML = plugInMadLibs(getSelectedMood(), getUserChoices());
+// // }
 
-function getDataOut() {
-  var fill = document.getElementById("getUserInput");
-  var getData = localStorage.getItem("name");
-  var parsedData = JSON.parse(getData);
-  console.log(parsedData);
-  //fill.textContent = parsedData;
-}
+// function getDataOut() {
+//   var fill = document.getElementById("getUserInput");
+//   var getData = localStorage.getItem("name");
+//   var parsedData = JSON.parse(getData);
+//   console.log(parsedData);
+//   //fill.textContent = parsedData;
+// }
 
-function getSelectedMood() {
-  //http://stackoverflow.com/questions/9618504/get-radio-button-value-with-javascript
-  var radios = document.getElementsByName("mood");
+// function getSelectedMood() {
+//   var radios = document.getElementsByName("mood");
+//    for (var i = 0; i < radios.length; i++) {
+//       if (radios[i].checked) {
+//           return stories[radios[i].id];
+//       }
+//   }
+// }
 
-  for (var i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-          // return the selected story without madlibs plugged in
-          return stories[radios[i].id];
-      }
-  }
-}
-
-function getUserChoices() {
-
-  var listOfChoices = {
+var listOfChoices = {
     nounList: [],
     adjectiveList: [],
     verbList: []
   }
 
+function getUserChoices() {
   var userNouns = document.getElementsByClassName("noun");
   for (var i = 0; i < userNouns.length; i++) {
     listOfChoices.nounList.push( userNouns[i].value );
@@ -76,33 +72,34 @@ function getUserChoices() {
   for (var i = 0; i < userVerbs.length; i++) {
     listOfChoices.verbList.push( userVerbs[i].value );
   }
-
-  return listOfChoices;
-  localStorage.setItem("noun", JSON.stringify(listOfChoices.nounList));
-  console.log(userNouns);
-  localStorage.setItem("adj", JSON.stringify(listOfChoices.adjectiveList));
-  console.log(userAdjectives);
-  localStorage.setItem("verb", JSON.stringify(listOfChoices.verbList));
-  console.log(userVerbs);
+  // localStorage.setItem("nounStored", JSON.stringify(this.listOfChoices.nounList));
+  // console.log(userNouns);
+  // // localStorage.setItem("adjStored", JSON.stringify(listOfChoices.adjectiveList));
+  // console.log(userAdjectives);
+  // localStorage.setItem("verbStored", JSON.stringify(listOfChoices.verbList));
+  // console.log(userVerbs);
 }
 
+getUserChoices();
+
+localStorage.setItem("hiphopopotamus", JSON.stringify(listOfChoices));
+  // console.log(userNouns);
 
 
+// function plugInMadLibs (story, listOfChoices) {
+//   story.replace("[verb1]",listOfChoices.verbList[0]);
+//   story.replace("[verb2]",listOfChoices.verbList[1]);
+//   story.replace("[verb3]",listOfChoices.verbList[2]);
+//   story.replace("[noun1]",listOfChoices.nounList[0]);
+//   story.replace("[noun2]",listOfChoices.nounList[1]);
+//   story.replace("[noun3]",listOfChoices.nounList[2]);
+//   story.replace("[adj1]",listOfChoices.adjectiveList[0]);
+//   story.replace("[adj2]",listOfChoices.adjectiveList[1]);
+//   story.replace("[adj3]",listOfChoices.adjectiveList[2]);
+//   return story;
+// }
 
-function plugInMadLibs (story, listOfChoices) {
-  story.replace("[verb1]",listOfChoices.verbList[0]);
-  story.replace("[verb2]",listOfChoices.verbList[1]);
-  story.replace("[verb3]",listOfChoices.verbList[2]);
-  story.replace("[noun1]",listOfChoices.nounList[0]);
-  story.replace("[noun2]",listOfChoices.nounList[1]);
-  story.replace("[noun3]",listOfChoices.nounList[2]);
-  story.replace("[adj1]",listOfChoices.adjectiveList[0]);
-  story.replace("[adj2]",listOfChoices.adjectiveList[1]);
-  story.replace("[adj3]",listOfChoices.adjectiveList[2]);
-  return story;
-}
+// var buttonAction = document.getElementById("button");
+// buttonAction.addEventListener("click", storeData);
 
-var buttonAction = document.getElementById("button");
-buttonAction.addEventListener("click", storeData);
-
-getDataOut();
+// getDataOut();

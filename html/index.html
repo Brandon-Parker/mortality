@@ -23,9 +23,9 @@
 </header>
 
 <body>
-  <section>
-    <form id="inputForm">
-      <label>Name: <input id="input" type="text" name="name" maxlength="30"></label>
+  <section id="inputForm">
+    <form id="resultsForm">
+      <label>Name: <input id="username" type="text" name="name" maxlength="30"></label>
       <br/ >
       Mood:
       <br/ >
@@ -46,37 +46,34 @@
       <!-- <br /> -->
       <input id="bearded" type="radio" name="mood" value="scott">
       <label for="bearded">Bearded</label>
-    </form>
-
-    <form id="spanWords">
       <label>
-        Noun: <input class="noun" type="text" name="nounOne" maxlength="30">
+        Noun: <input required class="noun" type="text" name="nounOne" maxlength="30">
       </label>
       <label>
-        Noun: <input class="noun" type="text" name="nounTwo" maxlength="30">
+        Noun: <input required class="noun" type="text" name="nounTwo" maxlength="30">
       </label>
       <label>
-        Noun: <input class="noun" type="text" name="nounThree" maxlength="30">
+        Noun: <input required class="noun" type="text" name="nounThree" maxlength="30">
       </label>
       <label>
-        Adjective: <input class="adj" type="text" name="adjOne" maxlength="30">
+        Adjective: <input required class="adj" type="text" name="adjOne" maxlength="30">
       </label>
       <label>
-        Adjective: <input class="adj" type="text" name="adjTwo" maxlength="30">
+        Adjective: <input required class="adj" type="text" name="adjTwo" maxlength="30">
       </label>
       <label>
-        Adjective: <input class="adj" type="text" name="adjThree" maxlength="30">
+        Adjective: <input required class="adj" type="text" name="adjThree" maxlength="30">
       </label>
       <label>
-        Verb: <input class="verb" type="text" name="verbOne" maxlength="30">
+        Verb: <input required class="verb" type="text" name="verbOne" maxlength="30">
       </label>
       <label>
-        Verb: <input class="verb" type="text" name="verbTwo" maxlength="30">
+        Verb: <input required class="verb" type="text" name="verbTwo" maxlength="30">
       </label>
       <label>
-        Verb: <input class="verb" type="text" name="verbThree" maxlength="30">
+        Verb: <input required class="verb" type="text" name="verbThree" maxlength="30">
       </label>
-      <button id="button">Get My Result</button>
+        <input id="button" type="submit" value="Get My Result"></input>
     </form>
   </section>
   <script type="text/javascript" src="../js/index.js"></script>

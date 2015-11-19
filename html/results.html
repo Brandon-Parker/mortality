@@ -6,32 +6,38 @@
       <link rel="stylesheet" href="../css/normalize.css"/>
       <link rel="stylesheet" href="../css/skeleton.css"/>
       <link rel="stylesheet" href="../css/mortality.css"/>
+      <link rel="stylesheet" href="../css/batCSS.css"/>
       <a href="index.html"></a>
   </head>
 
-<header>
-  <h1 id="header">Your Death ;D</h1>
-  <nav>
-    <p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </p>
-  </nav>
-</header>
+  <header id="batHeader">
+    <h1 id="h1InHeader">Your Death ;D</h1>
+      <nav>
+        <p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </p>
+      </nav>
+  </header>
 
-<body>
+  <body>
+    <div class="row">
+      <section id="greeting" class="twelve columns"></section>
+      <section id="madLib" class="twelve columns"></section>
+    </div><!-- end of greeting and madlib div -->
+    <div class="row">
+      <button id="goBack" type="button">Try Again?</button>
+    </div><!-- end of button div -->
+    <div class="row">
+      <footer>
+      <div class="footer-animation"></div>
+      </footer>
+    </div><!-- end of footer div -->
+    <script type="text/javascript" src="../js/results.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/batJS.js"></script>
+  </body>
 
-  <section id="greeting"></section>
-  <section id="madLib"></section>
-  <button id="goBack" type="button">Try Again?</button>
-  <script type="text/javascript" src="../js/results.js"></script>
-
-</body>
-
-
-<footer>
- TBD
-</footer>
 </html>

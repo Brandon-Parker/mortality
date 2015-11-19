@@ -5,6 +5,11 @@ section {
   font-family: Metal Mania ;
 }
 
+#aboutTheTeam{
+  background-color: white;
+  font-family: Calibri;
+}
+
 #navBar {
   width: 550px;
   height: 35px;
@@ -37,5 +42,106 @@ padding: 20px;
     background-color: #FFF;
 }
 
-/*all images/animations/box sizes*/
+.row1 {
+  display: -webkit-box;
+}
 
+.row2 {
+  display: -webkit-box;
+}
+
+/*all images/animations/box sizes*/
+/***********Brandon's Photo Animation***********/
+.imageBrandon:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageBrandon {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Carson's Photo Animation***********/
+
+.imageCarson:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageCarson {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Melissa's Photo Animation***********/
+
+.imageMelissa:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageMelissa {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Sawako's Photo Animation***********/
+
+.imageSawako:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageSawako {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+#brandonResize{
+  width: 250px;
+  height: 250px;
+}
+#carsonResize{
+  width: 250px;
+  height: 250px;
+}
+#melissasResize{
+  width: 250px;
+  height: 250px;
+}
+#sawakoResize{
+  width: 250px;
+  height: 250px;
+}
+
+.footer-animation {
+  background:url(../images/babyReaper.png) no-repeat 0 0;
+  background-size: 150px;
+  width: 1500px;
+  height: 50px;
+  padding-top: 80%;
+  transition: none;
+  -webkit-animation: walk 35s steps(100) infinite;
+}
+​
+@-webkit-keyframes walk {
+   from { background-position: -10% 0; }
+     to { background-position: 100% 0; }
+}

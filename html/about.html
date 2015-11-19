@@ -2,18 +2,19 @@
 <html>
   <head>
     <title>INEVITABLE MORTALITY</title>
+      <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="../css/normalize.css"/>
       <link rel="stylesheet" href="../css/skeleton.css"/>
       <link rel="stylesheet" href="../css/mortality.css"/>
+      <link rel="stylesheet" href="../css/batCSS.css"/>
   </head>
 
-<header>
+<header id="batHeader">
   <h1>About Us</h1>
   <nav>
     <p>
       <ul>
-<!--         <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
- -->        <li><a href='index.html'>Home</a></li>
+        <li><a href='index.html'>Home</a></li>
         <li><a href='about.html'>About Us</a></li>
       </ul>
     </p>
@@ -21,30 +22,34 @@
 </header>
 
 <body>
-  <figure>
-    <img src="../images/brandon.png" alt="Brandon's Photo" />
-    <br />
-    <figcaption>TBA</figcaption>
-  </figure>
+<section id="aboutTheTeam">
+  <div class="row1">
+    <figure id= "brandonsImage">
+    <img src="../images/brandon.png" alt="Brandon's Photo" id="brandonResize" class="imageBrandon"/>
+      <br />
+      <figcaption>TBA</figcaption>
+    </figure>
 
-  <figure>
-    <img src="../images/carson.jpg" alt="Carson's Photo" />
-    <br />
-    <figcaption>TBA</figcaption>
-  </figure>
+    <figure id= "carsonsImage">
+      <img src="../images/carson.jpg" alt="Carson's Photo" id="carsonResize" class="imageCarson"/>
+      <br />
+      <figcaption>TBA</figcaption>
+    </figure>
+  </div>
+  <div class="row2">
+    <figure id= "melissasImage">
+    <img src="../images/melissa.jpg" alt="Melissa's Photo" id="melissaResize" class="imageMelissa"/>
+      <br />
+      <figcaption>TBA</figcaption>
+    </figure>
 
-  <figure>
-    <img src="../images/melissa.jpg" alt="Melissa's Photo" />
-    <br />
-    <figcaption>TBA</figcaption>
-  </figure>
-
-  <figure>
-    <img src="../images/sawako.png" alt="Sawako's Photo" />
-    <br />
-    <figcaption>TBA</figcaption>
-  </figure>
-
+    <figure id= "sawakosImage">
+      <img src="../images/sawako.png" alt="Sawako's Photo" id="sawakoResize" class="imageSawako"/>
+      <br />
+      <figcaption>TBA</figcaption>
+    </figure>
+  </div>
+</section>
 
 
 </body>
@@ -53,5 +58,6 @@
 <footer>
  TBD
 </footer>
-<script src='../js/about.js'/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/batJS.js"></script>
 </html>

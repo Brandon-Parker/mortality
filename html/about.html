@@ -2,18 +2,19 @@
 <html>
   <head>
     <title>INEVITABLE MORTALITY</title>
+      <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="../css/normalize.css"/>
       <link rel="stylesheet" href="../css/skeleton.css"/>
       <link rel="stylesheet" href="../css/mortality.css"/>
+      <link rel="stylesheet" href="../css/batCSS.css"/>
   </head>
 
-<header>
+<header id="batHeader">
   <h1>About Us</h1>
   <nav>
     <p>
       <ul>
-<!--         <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
- -->        <li><a href='index.html'>Home</a></li>
+        <li><a href='index.html'>Home</a></li>
         <li><a href='about.html'>About Us</a></li>
       </ul>
     </p>
@@ -21,26 +22,36 @@
 </header>
 
 <body>
-  <figure>
-    <img src="../images/brandon.png" alt="Brandon's Photo" />
+  <figure id= "brandonsImage" class="shakeit">
+    <img src="../images/brandon.png" alt="Brandon's Photo" id="brandonResize" />
     <br />
     <figcaption>TBA</figcaption>
   </figure>
 
-  <figure>
-    <img src="../images/carson.jpg" alt="Carson's Photo" />
+  <figure id= "carsonsImage">
+    <img src="../images/carson.jpg" alt="Carson's Photo" id="carsonResize" class="imageCarson"/>
     <br />
     <figcaption>TBA</figcaption>
   </figure>
 
-  <figure>
-    <img src="../images/melissa.jpg" alt="Melissa's Photo" />
+  <figure id= "melissasImage" class="carddiv">
+    <div class="containerMelissa">
+      <div class="carddiv">
+          <img class="frontofcard" src="../images/melissa.jpg" alt="Melissa's Photo">
+        <p class="backofcard">Melissa</p>
+      </div>
+    </div>
     <br />
     <figcaption>TBA</figcaption>
   </figure>
 
-  <figure>
-    <img src="../images/sawako.png" alt="Sawako's Photo" />
+  <figure id= "sawakosImage">
+    <div class="containerSawako">
+      <img src="../images/sawako.png" alt="Sawako's Photo" id="sawakoPhoto">
+        <div class="textbox">
+          <p class="text">Sawako</p>
+        </div>
+    </div>
     <br />
     <figcaption>TBA</figcaption>
   </figure>
@@ -53,5 +64,6 @@
 <footer>
  TBD
 </footer>
-<script src='../js/about.js'/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/batJS.js"></script>
 </html>

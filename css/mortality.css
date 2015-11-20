@@ -19,8 +19,9 @@ section {
 }
 
 #resultsForm input {
-  color: black;
+  color: grey;
 }
+
 
 #aboutTheTeam{
   background-color: black;
@@ -193,22 +194,21 @@ transition: all 0.7s ease;
 #buttonDiv {
   background-color: black;
   text-align: center;
-  padding-bottom: 50px;
-} /*submit button adjusted*/
+  padding-left: 20%;
+} /*submit button adjusted
+*/
+
+#buttonGetMyResults {
+  color: white;
+}
 
 #greeting {
   color: #ffffff;
-  padding-top: 80px;
-  padding-bottom: 30px;
-  padding-left: 200px;
   font-family: serif;
   font-size: 30px;
 } /*greeting styling added*/
 
 #madLib {
-  padding-right: 200px;
-  padding-bottom: 50px;
-  padding-left: 200px;
   color: #ffffff;
   font-family: serif;
   font-size: 20px;
@@ -218,3 +218,8 @@ transition: all 0.7s ease;
   font-size: 35px;
   color: #800E13;
 }
+
+#animation {
+  padding-left: 20%;
+}
+

@@ -23,8 +23,10 @@ section {
 }
 
 #aboutTheTeam{
-  background-color: white;
+  background-color: black;
   font-family: Calibri;
+  background-position: center auto;
+  position: absolute;
 }
 
 .navBar {
@@ -58,15 +60,24 @@ padding: 20px;
     background-color: #FFF;
 }
 
-#name {
+/*#name {
   padding-top: 10.0rem;
+}*/
+
+h4 {
+  color: white;
+  font-size: 24px;
 }
 
-.row1 {
+figcaption {
+  color: white;
+}
+
+#row1 {
   display: -webkit-box;
 }
 
-.row2 {
+#row2 {
   display: -webkit-box;
 }
 
@@ -169,7 +180,7 @@ transition: all 0.7s ease;
   background-size: 150px;
   width: 1500px;
   height: 50px;
-  padding-top: 80%;
+  padding-top: 5%;
   transition: none;
   -webkit-animation: walk 35s steps(100) infinite;
 }

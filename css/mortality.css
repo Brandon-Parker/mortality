@@ -176,27 +176,10 @@ transition: all 0.7s ease;
   margin-right: 15%;
 }
 
-.footer-animation {
-  background:url(../images/babyReaper.png) no-repeat 0 0;
-  background-size: 150px;
-  width: 1500px;
-  height: 50px;
-  padding-top: 5%;
-  transition: none;
-  -webkit-animation: walk 35s steps(100) infinite;
-}
-​
-@-webkit-keyframes walk {
-   from { background-position: -10% 0; }
-     to { background-position: 100% 0; }
-}
-
 #buttonDiv {
   background-color: black;
   text-align: center;
-  padding-left: 20%;
-} /*submit button adjusted
-*/
+}
 
 #buttonGetMyResults {
   color: white;
@@ -222,4 +205,3 @@ transition: all 0.7s ease;
 #animation {
   padding-left: 20%;
 }
-

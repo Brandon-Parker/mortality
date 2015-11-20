@@ -1,8 +1,25 @@
+body {
+  background: url("../images/background-color1.jpg");
+}
+
 section {
-  background-color: #000201 ;
+  background: #000201;
   font-size: 18px ;
   font-style: ;
   font-family: Metal Mania ;
+  text-align: center;
+}
+
+#resultsForm {
+  font-family: serif;
+}
+
+#resultsForm label {
+  display: inline;
+}
+
+#resultsForm input {
+  color: black;
 }
 
 #aboutTheTeam{
@@ -10,36 +27,39 @@ section {
   font-family: Calibri;
 }
 
-#navBar {
-  width: 550px;
-  height: 35px;
-  font-size: 18px;
+.navBar {
+  height: 42px;
+  /*background: url("../images/background-color1.jpg");*/
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-shadow: 3px 2px 3px #333333;
 }
 
-#navBar ul {
+.navBar ul {
     height: auto;
     padding: 8px 0px;
     margin: 0px;
     text-align: center;
 }
 
-#navBar li {
+.navBar li {
 display: inline;
 padding: 20px;
 }
 
-#navBar a {
+.navBar a {
     text-decoration: none;
-    color: #00F;
+    color: black;
     padding: 8px 8px 8px 8px;
 }
 
-#navBar a:hover {
-    color: #F90;
+.navBar a:hover {
     background-color: #FFF;
+}
+
+#name {
+  padding-top: 10.0rem;
 }
 
 .row1 {
@@ -48,6 +68,13 @@ padding: 20px;
 
 .row2 {
   display: -webkit-box;
+}
+
+.row {
+  /*background: url("../images/background-color1.jpg");*/
+  font-family: serif;
+  color: white;
+  padding-left: 20%;
 }
 
 /*all images/animations/box sizes*/
@@ -129,6 +156,12 @@ transition: all 0.7s ease;
 #sawakoResize{
   width: 250px;
   height: 250px;
+}
+
+#asidebar {
+  border-style: solid dotted;
+  padding: 5%;
+  margin-right: 15%;
 }
 
 .footer-animation {

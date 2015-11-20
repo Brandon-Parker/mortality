@@ -11,5 +11,5 @@ madLibSection.innerHTML = madLib;
 goBack.addEventListener("click", function() {
   localStorage.removeItem("hiphopopotamus");
   localStorage.removeItem("rhymenoceros");
-  window.location = "../html/index.html";
+  window.location = "../index.html";
 });

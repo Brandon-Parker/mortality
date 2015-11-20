@@ -4,7 +4,8 @@ var greeting = document.getElementById("greeting");
 var madLibSection = document.getElementById("madLib");
 var goBack = document.getElementById("goBack");
 
-greeting.innerHTML =  "hello, " + username + ". Here is your mad lib!";
+//changed hell to Hello, mad lib to Mad Lib//
+greeting.innerHTML =  "Hello, " + username + ". Here is your Mad Lib!";
 madLibSection.innerHTML = madLib;
 
 goBack.addEventListener("click", function() {

@@ -1,0 +1,214 @@
+body {
+  background: url("../images/background-color1.jpg");
+}
+
+section {
+  background: #000201;
+  font-size: 18px ;
+  font-style: ;
+  font-family: Metal Mania ;
+  text-align: center;
+}
+
+#resultsForm {
+  font-family: serif;
+}
+
+#resultsForm label {
+  display: inline;
+}
+
+#resultsForm input {
+  color: grey;
+}
+
+
+#aboutTheTeam{
+  background-color: black;
+  font-family: Calibri;
+  background-position: center auto;
+  position: absolute;
+  width: 100%;
+}
+
+.navBar {
+  height: 42px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 2px 3px #333333;
+}
+
+.navBar ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.navBar li {
+display: inline;
+padding: 20px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 8px 8px 8px;
+}
+
+.navBar a:hover {
+    background-color: black;
+}
+
+/*#name {
+  padding-top: 10.0rem;
+}*/
+
+h4 {
+  color: white;
+  font-size: 24px;
+}
+
+figcaption {
+  color: white;
+}
+
+#row1 {
+  display: -webkit-box;
+}
+
+#row2 {
+  display: -webkit-box;
+}
+
+.row {
+  /*background: url("../images/background-color1.jpg");*/
+  font-family: serif;
+  color: white;
+  padding-left: 20%;
+}
+
+.rowFooter {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/*all images/animations/box sizes*/
+/***********Brandon's Photo Animation***********/
+.imageBrandon:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageBrandon {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Carson's Photo Animation***********/
+
+.imageCarson:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageCarson {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Melissa's Photo Animation***********/
+
+.imageMelissa:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageMelissa {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+/***********Sawako's Photo Animation***********/
+
+.imageSawako:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageSawako {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+#brandonResize{
+  width: 250px;
+  height: 250px;
+}
+#carsonResize{
+  width: 250px;
+  height: 250px;
+}
+#melissasResize{
+  width: 250px;
+  height: 250px;
+}
+#sawakoResize{
+  width: 250px;
+  height: 250px;
+}
+
+#asidebar {
+  border-style: solid dotted;
+  padding: 5%;
+  margin-right: 15%;
+  font-size: 19px;
+}
+
+#buttonDiv {
+  background-color: black;
+  text-align: center;
+}
+
+#buttonGetMyResults {
+  color: white;
+}
+
+#greeting {
+  color: #ffffff;
+  font-family: serif;
+  font-size: 30px;
+} /*greeting styling added*/
+
+#madLib {
+  color: #ffffff;
+  font-family: serif;
+  font-size: 20px;
+} /*madlib styling added*/
+
+.choice {
+  font-size: 35px;
+  color: #800E13;
+}
+
+#animation {
+  padding-left: 20%;
+}

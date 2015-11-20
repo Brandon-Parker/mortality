@@ -56,16 +56,17 @@ function getUserChoices() {
   return choices;
 }
 
+//added <span> and class
 function plugInMadLibs (mood, listOfChoices) {
-  mood = mood.replace("[verb1]", listOfChoices.verbs[0]);
-  mood = mood.replace("[verb2]", listOfChoices.verbs[1]);
-  mood = mood.replace("[verb3]", listOfChoices.verbs[2]);
-  mood = mood.replace("[noun1]", listOfChoices.nouns[0]);
-  mood = mood.replace("[noun2]", listOfChoices.nouns[1]);
-  mood = mood.replace("[noun3]", listOfChoices.nouns[2]);
-  mood = mood.replace("[adj1]", listOfChoices.adjectives[0]);
-  mood = mood.replace("[adj2]", listOfChoices.adjectives[1]);
-  mood = mood.replace("[adj3]", listOfChoices.adjectives[2]);
+  mood = mood.replace("[verb1]", "<span class=\"choice\">" + listOfChoices.verbs[0] + "</span>");
+  mood = mood.replace("[verb2]", "<span class=\"choice\">" + listOfChoices.verbs[1] + "</span>");
+  mood = mood.replace("[verb3]", "<span class=\"choice\">" + listOfChoices.verbs[2] + "</span>");
+  mood = mood.replace("[noun1]", "<span class=\"choice\">" + listOfChoices.nouns[0] + "</span>");
+  mood = mood.replace("[noun2]", "<span class=\"choice\">" + listOfChoices.nouns[1] + "</span>");
+  mood = mood.replace("[noun3]", "<span class=\"choice\">" + listOfChoices.nouns[2] + "</span>");
+  mood = mood.replace("[adj1]", "<span class=\"choice\">" + listOfChoices.adjectives[0] + "</span>");
+  mood = mood.replace("[adj2]", "<span class=\"choice\">" + listOfChoices.adjectives[1] + "</span>");
+  mood = mood.replace("[adj3]", "<span class=\"choice\">" + listOfChoices.adjectives[2] + "</span>");
   return mood;
 }
 

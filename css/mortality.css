@@ -145,3 +145,32 @@ transition: all 0.7s ease;
    from { background-position: -10% 0; }
      to { background-position: 100% 0; }
 }
+
+#buttonDiv {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 50px;
+} /*submit button adjusted*/
+
+#greeting {
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-left: 200px;
+  font-family: serif;
+  font-size: 30px;
+} /*greeting styling added*/
+
+#madLib {
+  padding-right: 200px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  color: #ffffff;
+  font-family: serif;
+  font-size: 20px;
+} /*madlib styling added*/
+
+.choice {
+  font-size: 35px;
+  color: #800E13;
+}

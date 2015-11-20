@@ -28,11 +28,11 @@ section {
   font-family: Calibri;
   background-position: center auto;
   position: absolute;
+  width: 100%;
 }
 
 .navBar {
   height: 42px;
-  /*background: url("../images/background-color1.jpg");*/
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -53,12 +53,12 @@ padding: 20px;
 
 .navBar a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 8px 8px 8px 8px;
 }
 
 .navBar a:hover {
-    background-color: #FFF;
+    background-color: black;
 }
 
 /*#name {
@@ -180,6 +180,7 @@ transition: all 0.7s ease;
   border-style: solid dotted;
   padding: 5%;
   margin-right: 15%;
+  font-size: 19px;
 }
 
 #buttonDiv {

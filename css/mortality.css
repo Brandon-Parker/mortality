@@ -89,6 +89,12 @@ figcaption {
   padding-left: 20%;
 }
 
+.rowFooter {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
 /*all images/animations/box sizes*/
 /***********Brandon's Photo Animation***********/
 .imageBrandon:hover {

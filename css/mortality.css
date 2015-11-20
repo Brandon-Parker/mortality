@@ -1,53 +1,91 @@
+body {
+  background: url("../images/background-color1.jpg");
+}
+
 section {
-  background-color: #000201 ;
+  background: #000201;
   font-size: 18px ;
   font-style: ;
   font-family: Metal Mania ;
+  text-align: center;
+}
+
+#resultsForm {
+  font-family: serif;
+}
+
+#resultsForm label {
+  display: inline;
+}
+
+#resultsForm input {
+  color: black;
 }
 
 #aboutTheTeam{
-  background-color: white;
+  background-color: black;
   font-family: Calibri;
+  background-position: center auto;
+  position: absolute;
 }
 
-#navBar {
-  width: 550px;
-  height: 35px;
-  font-size: 18px;
+.navBar {
+  height: 42px;
+  /*background: url("../images/background-color1.jpg");*/
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-shadow: 3px 2px 3px #333333;
 }
 
-#navBar ul {
+.navBar ul {
     height: auto;
     padding: 8px 0px;
     margin: 0px;
     text-align: center;
 }
 
-#navBar li {
+.navBar li {
 display: inline;
 padding: 20px;
 }
 
-#navBar a {
+.navBar a {
     text-decoration: none;
-    color: #00F;
+    color: black;
     padding: 8px 8px 8px 8px;
 }
 
-#navBar a:hover {
-    color: #F90;
+.navBar a:hover {
     background-color: #FFF;
 }
 
-.row1 {
+/*#name {
+  padding-top: 10.0rem;
+}*/
+
+h4 {
+  color: white;
+  font-size: 24px;
+}
+
+figcaption {
+  color: white;
+}
+
+#row1 {
   display: -webkit-box;
 }
 
-.row2 {
+#row2 {
   display: -webkit-box;
+}
+
+.row {
+  /*background: url("../images/background-color1.jpg");*/
+  font-family: serif;
+  color: white;
+  padding-left: 20%;
 }
 
 /*all images/animations/box sizes*/
@@ -131,12 +169,18 @@ transition: all 0.7s ease;
   height: 250px;
 }
 
+#asidebar {
+  border-style: solid dotted;
+  padding: 5%;
+  margin-right: 15%;
+}
+
 .footer-animation {
   background:url(../images/babyReaper.png) no-repeat 0 0;
   background-size: 150px;
   width: 1500px;
   height: 50px;
-  padding-top: 80%;
+  padding-top: 5%;
   transition: none;
   -webkit-animation: walk 35s steps(100) infinite;
 }

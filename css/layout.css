@@ -1,0 +1,28 @@
+section {
+  text-align: center;
+}
+
+#resultsForm label {
+  display: inline;
+}
+
+#aboutTheTeam{
+  position: absolute;
+  width: 100%;
+}
+
+#row1 {
+  display: -webkit-box;
+}
+
+#row2 {
+  display: -webkit-box;
+}
+
+.row {
+  padding-left: 20%;
+}
+
+.rowFooter {
+  text-align: center;
+}

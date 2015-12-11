@@ -76,5 +76,5 @@ document.getElementById("resultsForm").addEventListener("submit", function(event
   var choices = getUserChoices();
   var completedMadLib = plugInMadLibs(mood, choices);
   localStorage.setItem("rhymenoceros", completedMadLib);
-  window.location = "../final/html/results.html";
+  window.location = "html/results.html";
 });

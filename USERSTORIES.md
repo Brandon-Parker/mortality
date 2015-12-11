@@ -1,6 +1,14 @@
 # User Stories for Refactor
 
-* As a product owner, I'd like the mortality stories in a separate JSON file so they can be maintained without touching code.
+
+1. As a product owner, I'd like non-technical authors to be able to edit the stories without touching code.
+	* the mortality stories in a separate JSON file 
+	* handlebars for templates
 * As a developer, I'd like DOM manipulation to be performed via jQuery for the sake of cleaner code.
-* As a developer, I'd like the stories to be populated via Handlebars to clean up the code.
+* Objectify code
+ * As developer, I want to turn functions and reduce anon functs for the sake of code readability.
+ * 	Turn words (verbs, adj, nouns) into object properties
+* Typography, usability (contrast, etc)
 * As a developer, I'd like the CSS is SMACSS format for future sustainability
+* Pass eslint
+* As a user, I want an intro prompt to tell me what the app is and what to do with it.

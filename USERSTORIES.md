@@ -4,9 +4,10 @@
   * ✔the mortality stories in a separate JSON file
   * handlebars for templates
 * As a developer, I'd like DOM manipulation to be performed via jQuery for the sake of cleaner code.
-* Objectify code
- * As developer, I want to turn functions and reduce anon functs for the sake of code readability.
- * 	Turn words (verbs, adj, nouns) into object properties
+* ✔Objectify code
+ * ✔As developer, I want to turn functions and reduce anon functs for the sake of code readability.
+ * ✔Turn words (verbs, adj, nouns) into object properties
+* ✔As the product owner, I want mobile-first coding to allow my site to work well across device sizes.
 * Typography, usability (contrast, etc)
 * ✔As a developer, I'd like the CSS is SMACSS format for future sustainability
 * Pass eslint

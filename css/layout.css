@@ -1,11 +1,18 @@
-section {
+/*section {
   text-align: center;
 }
 
 #resultsForm label {
   display: inline;
+}*/
+
+#inputForm {
+  padding: 2em 10%;
 }
 
+fieldset {
+  align-self: center;
+}
 #aboutTheTeam{
   position: absolute;
   width: 100%;
@@ -19,9 +26,9 @@ section {
   display: -webkit-box;
 }
 
-.row {
+/*.row {
   padding-left: 20%;
-}
+}*/
 
 .rowFooter {
   text-align: center;

@@ -18,6 +18,11 @@ section {
   font-family: Metal Mania ;
 }
 
+.choice {
+  font-size: 35px;
+  color: #800E13;
+}
+
 #resultsForm {
   font-family: serif;
 }

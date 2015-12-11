@@ -2,7 +2,7 @@ aside {
   display: none;
 }
 
-@media only screen and (min-width : 700px) {
+@media only screen and (min-width : 800px) {
   aside {
     display: block;
   }

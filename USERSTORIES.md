@@ -1,7 +1,7 @@
 # User Stories for Refactor
 
 1. As a product owner, I'd like non-technical authors to be able to edit the stories without touching code.
-  * the mortality stories in a separate JSON file
+  * ✔the mortality stories in a separate JSON file
   * handlebars for templates
 * As a developer, I'd like DOM manipulation to be performed via jQuery for the sake of cleaner code.
 * Objectify code

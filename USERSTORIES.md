@@ -8,6 +8,6 @@
  * As developer, I want to turn functions and reduce anon functs for the sake of code readability.
  * 	Turn words (verbs, adj, nouns) into object properties
 * Typography, usability (contrast, etc)
-* As a developer, I'd like the CSS is SMACSS format for future sustainability
+* ✔As a developer, I'd like the CSS is SMACSS format for future sustainability
 * Pass eslint
 * As a user, I want an intro prompt to tell me what the app is and what to do with it.

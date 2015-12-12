@@ -1,8 +1,8 @@
 var madLib = {};
 madLib.stories = [];
 
-var userName = '';
-var mood = '';
+madLib.userName = '';
+madLib.mood = '';
 madLib.nouns = [];
 madLib.adjs = [];
 madLib.verbs = [];
@@ -27,8 +27,8 @@ madLib.watchForm = function() {
 };
 
 madLib.getValues= function() {
-  userName = $('#username').val();
-  mood = $('input[name="mood"]:checked').val();
+  madLib.userName = $('#username').val();
+  madLib.mood = $('input[name="mood"]:checked').val();
   var noun1 = $('#nounOne').val();
   var noun2 = $('#nounTwo').val();
   var noun3 = $('#nounThree').val();
@@ -43,26 +43,10 @@ madLib.getValues= function() {
   madLib.adjs = [adj1, adj2, adj3];
   madLib.verbs = [verb1, verb2, verb3];
 
-  console.log(mood);
+  console.log(madLib.mood);
   console.log(madLib.nouns);
-
-  // console.log(noun1);
-  // console.log(noun2);
-
-  // var radios = document.getElementsByName('mood');
-  // for (var i = 0; i < radios.length; i++) {
-  //   if (radios[i].checked) {
-  //     return stories[radios[i].id];
-  //   }
-  // }
 };
 
-// function getUserChoices() {
-//   var choices = {
-//     nouns: [],
-//     adjectives: [],
-//     verbs: []
-// };
 
 //
 // function plugInMadLibs (mood, listOfChoices) {
@@ -78,13 +62,16 @@ madLib.getValues= function() {
 //
 //   return mood;
 // }
-//
-// document.getElementById("resultsForm").addEventListener("submit", function(event) {
-//   event.preventDefault();
-//   localStorage.setItem("hiphopopotamus", document.getElementById("username").value);
-//   var mood = getSelectedMood();
-//   var choices = getUserChoices();
-//   var completedMadLib = plugInMadLibs(mood, choices);
-//   localStorage.setItem("rhymenoceros", completedMadLib);
-//   window.location = "html/results.html";
-// });
+
+
+madLib.handleSubmit = function() {
+  $('#buttonGetMyResults').on('click', function(event) {
+    event.preventDefault();
+    console.log('Hi!!!');
+    console.log(madLib);
+    madLibString = JSON.stringify(madLib);
+    console.log(madLibString);
+    localStorage.setItem('madLib', madLibString);
+    window.location = 'results.html';
+  });
+};

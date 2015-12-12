@@ -6,7 +6,7 @@
   display: inline;
 }*/
 
-#inputForm {
+#inputForm, #results {
   padding: 2em 10%;
 }
 

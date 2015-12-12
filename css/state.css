@@ -1,0 +1,13 @@
+aside {
+  display: none;
+}
+
+#results {
+  display: none;
+}
+
+@media only screen and (min-width : 800px) {
+  aside {
+    display: block;
+  }
+}

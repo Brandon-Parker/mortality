@@ -1,0 +1,49 @@
+body {
+  background: url("../images/background-color1.jpg");
+}
+
+h4 {
+  color: white;
+  font-size: 24px;
+}
+
+figcaption {
+  color: white;
+}
+
+section {
+  background: #000201;
+  font-size: 18px ;
+  font-family: Metal Mania ;
+}
+
+.choice {
+  font-size: 35px;
+  color: #800E13;
+}
+
+#resultsForm {
+  font-family: serif;
+}
+
+
+#resultsForm input {
+  color: grey;
+}
+
+
+#aboutTheTeam{
+  background-color: black;
+  font-family: Calibri;
+  background-position: center auto;
+}
+
+.row {
+  font-family: serif;
+  color: white;
+}
+
+.rowFooter {
+  color: white;
+  font-size: 20px;
+}

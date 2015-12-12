@@ -1,36 +1,19 @@
-body {
-  background: url("../images/background-color1.jpg");
-}
-
-section {
-  background: #000201;
-  font-size: 18px ;
-  font-style: ;
-  font-family: Metal Mania ;
-  text-align: center;
-}
-
-#resultsForm {
-  font-family: serif;
-}
-
-#resultsForm label {
-  display: inline;
-}
-
-#resultsForm input {
-  color: grey;
-}
-
-
-#aboutTheTeam{
-  background-color: black;
-  font-family: Calibri;
-  background-position: center auto;
-  position: absolute;
+/**************/
+/*Start Bats!!*/
+#batHeader {
   width: 100%;
+  height: 100%;
+  /*background: #800E13;*/
+  text-align: center;
+  font-family: Metal Mania;
 }
 
+#h1InHeader {
+  font-size: 550%;
+}
+/* End Bats!! */
+/**************/
+/*   Nav      */
 .navBar {
   height: 42px;
   font-size: 20px;
@@ -60,40 +43,8 @@ padding: 20px;
 .navBar a:hover {
     background-color: black;
 }
-
-/*#name {
-  padding-top: 10.0rem;
-}*/
-
-h4 {
-  color: white;
-  font-size: 24px;
-}
-
-figcaption {
-  color: white;
-}
-
-#row1 {
-  display: -webkit-box;
-}
-
-#row2 {
-  display: -webkit-box;
-}
-
-.row {
-  /*background: url("../images/background-color1.jpg");*/
-  font-family: serif;
-  color: white;
-  padding-left: 20%;
-}
-
-.rowFooter {
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
+/*   End Nav   */
+/***************/
 
 /*all images/animations/box sizes*/
 /***********Brandon's Photo Animation***********/
@@ -179,7 +130,7 @@ transition: all 0.7s ease;
 #asidebar {
   border-style: solid dotted;
   padding: 5%;
-  margin-right: 15%;
+  /*margin-right: 15%;*/
   font-size: 19px;
 }
 
@@ -203,11 +154,6 @@ transition: all 0.7s ease;
   font-family: serif;
   font-size: 20px;
 } /*madlib styling added*/
-
-.choice {
-  font-size: 35px;
-  color: #800E13;
-}
 
 #animation {
   padding-left: 20%;

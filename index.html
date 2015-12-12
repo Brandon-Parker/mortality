@@ -5,101 +5,113 @@
       <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="css/normalize.css"/>
       <link rel="stylesheet" href="css/skeleton.css"/>
-      <link rel="stylesheet" href="css/mortality.css"/>
-      <link rel="stylesheet" href="css/batCSS.css"/>
-      <a href="html/results.html"></a>
+      <link rel="stylesheet" href="css/layout.css"/>
+      <link rel="stylesheet" href="css/modules.css"/>
+      <link rel="stylesheet" href="css/state.css"/>
+      <link rel="stylesheet" href="css/theme.css"/>
+      <a href="results.html"></a>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   </head>
-
-  <header id="batHeader">
-    <h1 id="h1InHeader">Team Inevitable Mortality</h1>
-  </header>
-  <nav class="navBar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="html/about.html">About Us</a></li>
-      </ul>
-  </nav>
-
   <body>
-    <div class="row">
-      <section id="inputForm" class="nine columns">
-    <h3>Welcome to Death MadLibs</h3>
-        <form id="resultsForm" >
-          <label id="name">Name: <input id="username" type="text" name="name" maxlength="30"></label>
-          <br/ >
-          Mood:
-          <br/ >
-          <input id="apathetic" type="radio" name="mood" value="apa">
-          <label for="apathetic">Apathetic</label>
-          <br/ >
-          <input id="insane" type="radio" name="mood" value="ins">
-          <label for="insane">Insane</label>
-          <br/ >
-          <input id="rambunctious" type="radio" name="mood" value="ram">
-          <label for="rambunctious">Rambunctious</label>
-          <br/ >
-          <input id="drunk" type="radio" name="mood" value="dru">
-          <label for="drunk">Drunk</label>
-          <br />
-          <input id="optimistic" type="radio" name="mood" value="opt">
-          <label for="optimistic">Optimistic</label>
-          <br />
-          <input id="bearded" type="radio" name="mood" value="scott">
-          <label for="bearded">Bearded</label>
-          <br />
-          <label>
-            Noun: <input required class="noun" type="text" name="nounOne" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Noun: <input required class="noun" type="text" name="nounTwo" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Noun: <input required class="noun" type="text" name="nounThree" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Adjective: <input required class="adj" type="text" name="adjOne" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Adjective: <input required class="adj" type="text" name="adjTwo" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Adjective: <input required class="adj" type="text" name="adjThree" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Verb: <input required class="verb" type="text" name="verbOne" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Verb: <input required class="verb" type="text" name="verbTwo" maxlength="30">
-          </label>
-          <br />
-          <label>
-            Verb: <input required class="verb" type="text" name="verbThree" maxlength="30">
-          </label>
-          <br />
-        <div id="myResultButton">
-          <input id="buttonGetMyResults" type="submit" value="Get My Result"></input>
-        </div>
-        </form>
-      </section>
-      <div class="three columns">
-        <aside id="asidebar">A 17-year-old boy died after reportedly playing an online computer game for 22 days straight. The young man had broken his leg and was bored at home, using video games to pass the time. He only stopped playing Defence of the Ancients when he had to sleep and eat. According to investigators, the teen spent more than 2,000 hours playing the game in the past year and a half. On August 30, the boy's parents no longer heard their son playing video games in his room. They rushed him to the hospital, but he was declared dead on arrival. Doctors say that Rustam may have died from second class syndrome, thrombosis. This occurs when people stay still for a long period of time without moving around to keep blood flowing.</aside>
+    <header id="batHeader">
+      <h1 id="h1InHeader">Team Inevitable Mortality</h1>
+    </header>
+    <nav class="navBar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+      <div class="row">
+        <section id="inputForm" class="six columns">
+          <h3>Welcome to Death MadLibs</h3>
+          <form id="resultsForm" >
+            <label id="name">Name:</label>
+            <input id="username" type="text" name="name" maxlength="30" placeholder="Enter your name" required>
+
+            <fieldset>
+              <legend>What's your mood?:</legend>
+              <label for="apathetic">
+                <input id="apathetic" type="radio" name="mood" value="apa" checked="checked">
+                Apathetic
+              </label>
+              <label for="insane">
+                <input id="insane" type="radio" name="mood" value="ins">
+                Insane
+              </label>
+              <label for="rambunctious">
+                <input id="rambunctious" type="radio" name="mood" value="ram">
+                Rambunctious
+              </label>
+              <label for="drunk">
+                <input id="drunk" type="radio" name="mood" value="dru">
+                Drunk
+              </label>
+              <label for="optimistic">
+                <input id="optimistic" type="radio" name="mood" value="opt">
+                Optimistic
+              </label>
+              <label for="bearded">
+                <input id="bearded" type="radio" name="mood" value="scott">
+                Bearded
+              </label>
+              </fieldset>
+              <fieldset>
+                <legend>Enter three nouns:</legend>
+                <label>
+                  <input required class="noun" type="text" id="nounOne" maxlength="30" placeholder="Enter a noun" required>
+                </label>
+                <label>
+                  <input required class="noun" type="text" id="nounTwo" maxlength="30" placeholder="Enter a noun" required>
+                </label>
+                <label>
+                  <input required class="noun" type="text" id="nounThree" maxlength="30" placeholder="Enter a noun" required>
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Enter three adjectives:</legend>
+                <label>
+                  <input required class="adj" type="text" id="adjOne" maxlength="30" placeholder="Enter an adjective" required>
+                </label>
+                <label>
+                  <input required class="adj" type="text" id="adjTwo" maxlength="30" placeholder="Enter an adjective" required>
+                </label>
+                <label>
+                  <input required class="adj" type="text" id="adjThree" maxlength="30" placeholder="Enter an adjective" required>
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Enter three verbs:</legend>
+                <label>
+                  <input required class="verb" type="text" name="verbOne" maxlength="30" placeholder="Enter a verb" required>
+                </label>
+                <label>
+                  <input required class="verb" type="text" name="verbTwo" maxlength="30" placeholder="Enter a verb" required>
+                </label>
+                <label>
+                  <input required class="verb" type="text" name="verbThree" maxlength="30" placeholder="Enter a verb" required>
+                </label>
+              </fieldset>
+            <input id="buttonGetMyResults" type="submit" value="Get My Result"></input>
+          </form>
+        </section>
+        <aside id="asidebar" class="six columns">
+          A 17-year-old boy died after reportedly playing an online computer game for 22 days straight. The young man had broken his leg and was bored at home, using video games to pass the time. He only stopped playing Defence of the Ancients when he had to sleep and eat. According to investigators, the teen spent more than 2,000 hours playing the game in the past year and a half. On August 30, the boy's parents no longer heard their son playing video games in his room. They rushed him to the hospital, but he was declared dead on arrival. Doctors say that Rustam may have died from second class syndrome, thrombosis. This occurs when people stay still for a long period of time without moving around to keep blood flowing.
+        </aside>
       </div>
-    </div><!-- end row -->
-    <div class="rowFooter">
-      <footer class="twelve columns">
-      <p>Thank you for visiting our Page! Feel free to share with your friendz homie</p>
-      <p>Team Inevitable Mortality LLC</p>
-      </footer>
-    </div>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/batJS.js"></script>
+    </main>
+    <!-- end row -->
+      <div class="rowFooter">
+        <footer class="twelve columns">
+        <p>Thank you for visiting our Page! Feel free to share with your friendz homie</p>
+        <p>Team Inevitable Mortality LLC</p>
+        </footer>
+      </div>
+      <script type="text/javascript" src="js/batJS.js"></script>
+      <script type="text/javascript" src="js/madlib.js"></script>
+      <script type="text/javascript" src="js/stories.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
